@@ -6,3 +6,8 @@ def load_data(filename):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"{file_path} not found.")
     return pd.read_csv(file_path)
+
+import pandas as pd
+
+def load_data(path):
+    return pd.read_csv(path)
